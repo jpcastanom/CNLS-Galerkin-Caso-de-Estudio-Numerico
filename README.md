@@ -20,7 +20,7 @@ donde `e` es el coeficiente de modulación de fase cruzada, sujeto a condiciones
 
 - Esquema conservativo: Preserva cantidades físicas fundamentales (masa, momento lineal, energía)
 - Estabilidad incondicional: Validado mediante análisis de von Neumann
-- Convergencia de segundo orden: $$ O(k^2 + h^2) $$ en espacio y tiempo respectivamente
+- Convergencia de segundo orden: O(h^2 + k^2) en espacio y tiempo respectivamente
 - Procesamiento paralelo: Implementación optimizada con parfor para estudios de convergencia
 
 # Validación
@@ -38,11 +38,11 @@ No se requieren pasos de instalación adicionales. Los archivos están listos pa
 ## Estructura del repositorio
 ```
 
-├── nls.m                          # Solver principal (Galerkin + Newton)
+├── nls.m                          # Solver principal (Galerkin + Newton) resuelve la ecuación con condiciones iniciales
 ├── nls_invariants.m               # Cálculo de cantidades conservadas
 ├── convergencia_espacial.m        # Análisis de convergencia espacial
 ├── convergencia_temporal.m        # Análisis de convergencia temporal
 ├── ResultadosESNL.mlx             # Notebook con todos los escenearios, casos, pruebas de convengencia y demás resultados
-└── solucionExactaConservacion.mlx # Verificación simbólica de la conservacion del moemnto lineal y la energia $
+└── solucionExactaConservacion.mlx # Verificación simbólica de la conservacion del moemnto lineal y la energia 
 
 ```
