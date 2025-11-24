@@ -30,7 +30,7 @@ donde `e` es el coeficiente de modulación de fase cruzada, sujeto a condiciones
 - Análisis sistemático de convergencia espacial y temporal
 
 # Instalación 
-git clone https://github.com/usuario/cnls-galerkin.git
+git clone https://github.com/jpcastanom/CNLS-Galerkin-Caso-de-Estudio-Numerico.git
 cd cnls-galerkin
 
 No se requieren pasos de instalación adicionales. Los archivos están listos para ejecutarse en MATLAB.
